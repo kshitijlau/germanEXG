@@ -67,7 +67,7 @@ if not api_key:
 # Configure the generative AI model
 try:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-pro')
 except Exception as e:
     st.error(f"Error configuring the API. Please check your key. Details: {e}")
     st.stop()
